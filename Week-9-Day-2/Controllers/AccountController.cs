@@ -152,10 +152,14 @@ namespace Week_9_Day_2.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
-                //var fName = new ApplicationUser {FirstName = model. };
-                //var lName = new ApplicationUser { LastName = model. }
-                //var dob = new ApplicationUser { DOB = model. }
+                var user = new ApplicationUser {
+                    UserName = model.Email, Email = model.Email,
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
+                    DOB = model.DOB 
+
+                };
+             
 
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)

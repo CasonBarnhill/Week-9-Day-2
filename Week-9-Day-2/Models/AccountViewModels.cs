@@ -48,10 +48,13 @@ namespace Week_9_Day_2.Models
 
     public class LoginViewModel
     {
+
         [Required]
         [Display(Name = "Email")]
         [EmailAddress]
         public string Email { get; set; }
+
+       
 
         [Required]
         [DataType(DataType.Password)]
@@ -64,6 +67,23 @@ namespace Week_9_Day_2.Models
 
     public class RegisterViewModel
     {
+
+        [Required]
+        [Display(Name = "FirstName")]
+        [EmailAddress]
+        public string FirstName { get; set; }
+
+        [Required]
+        [Display(Name = "LastName")]
+        [EmailAddress]
+        public string LastName { get; set; }
+
+        [Required]
+        [Display(Name = "DOB")]
+        [EmailAddress]
+        public string DOB { get; set; }
+
+      
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
