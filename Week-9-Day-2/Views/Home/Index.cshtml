@@ -1,4 +1,7 @@
-﻿@{
+﻿@model Week_9_Day_2.Models.ApplicationUser
+
+
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -9,5 +12,9 @@
 </div>
 
 <div class="row">
+    @Model.FirstName
+    @Model.LastName
+    @Model.DOB
+    @Model.Email
     
 </div>
