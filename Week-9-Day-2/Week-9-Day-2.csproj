@@ -187,6 +187,10 @@
     <Compile Include="Migrations\201512152100168_Initial-Create.Designer.cs">
       <DependentUpon>201512152100168_Initial-Create.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512162308590_AddDOB.cs" />
+    <Compile Include="Migrations\201512162308590_AddDOB.Designer.cs">
+      <DependentUpon>201512162308590_AddDOB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -266,6 +270,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201512152100168_Initial-Create.resx">
       <DependentUpon>201512152100168_Initial-Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512162308590_AddDOB.resx">
+      <DependentUpon>201512162308590_AddDOB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
