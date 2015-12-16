@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Week_9_Day_2.Models
@@ -70,18 +71,16 @@ namespace Week_9_Day_2.Models
 
         [Required]
         [Display(Name = "FirstName")]
-        [EmailAddress]
         public string FirstName { get; set; }
 
         [Required]
         [Display(Name = "LastName")]
-        [EmailAddress]
         public string LastName { get; set; }
 
         [Required]
         [Display(Name = "DOB")]
-        [EmailAddress]
-        public string DOB { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime DOB { get; set; }
 
       
         [Required]
@@ -99,6 +98,9 @@ namespace Week_9_Day_2.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+
+        
     }
 
     public class ResetPasswordViewModel

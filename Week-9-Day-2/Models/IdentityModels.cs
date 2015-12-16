@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 
 namespace Week_9_Day_2.Models
 {
@@ -19,7 +20,7 @@ namespace Week_9_Day_2.Models
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string DOB { get; set; }
+        public DateTime DOB { get; set; }
        
     }
 
